@@ -2,32 +2,64 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
-
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  flex-grow: 1;
+  overflow: clip;
 }
 
 @layer utilities {
-  .text-balance {
+  .balance-text {
     text-wrap: balance;
+  }
+}
+
+@layer base {
+  /* Fonts */
+  .font-interTight {
+    font-family: var(--font-inter-tight);
+  }
+  .special-border {
+    background: linear-gradient(#fff, #fff) padding-box,
+      linear-gradient(120deg, #ff006e, #8338ec, #fb5607) border-box;
+  }
+
+  /* .special-border-dark {
+    background: linear-gradient(#323237, #323237) padding-box,
+      linear-gradient(120deg, #ff006e, #8338ec, #fb5607) border-box;
+  } */
+
+  .special-border-dark {
+    background: linear-gradient(#11182D, #11182D) padding-box,
+      linear-gradient(120deg, #70e000, #008000, #ccff33) border-box;
+  }
+
+  /* .special-border-dark {
+    background: linear-gradient(#323237, #323237) padding-box,
+      linear-gradient(120deg, #2667ff, #3b28cc, #3f8efc) border-box;
+  } */
+
+  .chrome-border {
+    background: linear-gradient(#fff, #fff) padding-box,
+      linear-gradient(120deg, #d4d4d8, #f4f4f5, #d4d4d8) border-box;
+  }
+
+  .chrome-border-gray {
+    background: linear-gradient(#fafafa,#fafafa) padding-box,linear-gradient(120deg,#d4d4d8,#f4f4f5,#d4d4d8) border-box;
+  }
+
+  .dark-chrome-border {
+    background: linear-gradient(#27272a, #27272a) padding-box,
+      linear-gradient(120deg, #3f3f46, rgb(63 63 70/0), #3f3f46) border-box;
+  }
+
+  .medium-chrome-border {
+    background: linear-gradient(#11182D, #11182D) padding-box,
+      linear-gradient(120deg, #3f3f46, rgb(63 63 70/0), #3f3f46) border-box;
   }
 }
