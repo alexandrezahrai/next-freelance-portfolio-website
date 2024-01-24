@@ -1,15 +1,8 @@
 "use client";
 import Link from "next/link";
 import { Squeeze as Hamburger } from "hamburger-react";
-import { useState } from "react";
 
-export default function Navbar() {
-  const [navOpen, setNavOpen] = useState(false);
-
-  function handleNavOpen() {
-    setNavOpen(!navOpen);
-  }
-
+export default function Navbar({ onClick, navOpen }) {
   const pages = [
     {
       name: "Home",
@@ -61,7 +54,7 @@ export default function Navbar() {
       <button
         type="button"
         className="z-[1002] relative lg:hidden"
-        onClick={handleNavOpen}
+        onClick={onClick}
       >
         <Hamburger duration={0.3} color="white" />
       </button>
