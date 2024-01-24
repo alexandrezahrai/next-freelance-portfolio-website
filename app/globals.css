@@ -17,6 +17,10 @@ main {
   .balance-text {
     text-wrap: balance;
   }
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
 }
 
 @layer base {

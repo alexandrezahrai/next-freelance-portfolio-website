@@ -1,6 +1,7 @@
 import { Inter, Inter_Tight } from "next/font/google";
 import "./globals.css";
 import Footer from "./components/Footer";
+import Navbar from "./components/Navbar";
 
 const inter = Inter({ subsets: ["latin"] });
 const interTight = Inter_Tight({
@@ -20,6 +21,9 @@ export default function RootLayout({ children }) {
       <body
         className={`${inter.className} ${interTight.variable} text-off-black`}
       >
+        <header className="bg-transparent text-white w-full fixed lg:absolute top-0 z-[1001] transition-all duration-500 ease-in-out">
+          <Navbar />
+        </header>
         {children}
         <Footer />
       </body>

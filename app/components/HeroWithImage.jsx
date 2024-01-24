@@ -6,7 +6,7 @@ export default function HeroWithImage({ heading, fancyHeading, subheading }) {
       <div className="absolute inset-0 blur-3xl">
         <img src="https://preview.cruip.com/quoty/images/bg-illustration.svg" alt="pattern" className="w-full h-full object-cover object-center" />
       </div>
-      <div className="container relative">
+      <div className="container relative mt-8 lg:mt-16">
         <div className="max-w-2xl mx-auto">
           <h1 className="text-[40px] md:text-[52px] font-bold text-center tracking-[-0.017em] leading-tight font-interTight text-white">
             {heading + " "}
