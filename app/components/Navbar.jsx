@@ -30,7 +30,7 @@ export default function Navbar() {
       <Link
         href="/"
         aria-label="navigate to homepage"
-        className={`w-10 z-[1002] transition-colors duration-200 ease-in-out text-white relative`}
+        className={`w-12 z-[1002] transition-colors duration-200 ease-in-out text-white relative`}
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -72,13 +72,13 @@ export default function Navbar() {
         }`}
       >
         <nav className="w-full max-h-screen pt-24 pb-24 overflow-y-auto container no-scrollbar">
-          <ul className="list-none flex flex-col lg:flex-row lg:items-center gap-4 lg:gap-[60px]">
+          <ul className="list-none flex flex-col lg:flex-row lg:items-center gap-10 lg:gap-[60px]">
             {pages.map((page, index) => {
               return (
                 <li key={index}>
                   <Link
                     href={page.route}
-                    className="text-[32px] font-bold text-center tracking-[-0.017em] leading-tight font-interTight text-white"
+                    className="text-[40px] md:text-[52px] font-bold text-center tracking-[-0.017em] leading-tight font-interTight text-white uppercase"
                   >
                     {page.name}
                   </Link>
