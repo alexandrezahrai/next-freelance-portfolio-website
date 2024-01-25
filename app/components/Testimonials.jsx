@@ -16,7 +16,7 @@ export default function Testimonials({ array }) {
           <div className="grid place-content-center place-items-center">
             <BadgeDark label="Testimonials" />
           </div>
-          <h2 className="balance-text text-[32px] md:text-[40px] leading-[1.25] tracking-[-0.017em] font-bold text-center font-interTight">
+          <h2 className="balance-text text-step-4 leading-[1.25] tracking-[-0.017em] font-bold text-center font-interTight">
             Client chronicles: reviews and success stories
           </h2>
         </div>

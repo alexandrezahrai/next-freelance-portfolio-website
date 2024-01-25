@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import { Squeeze as Hamburger } from "hamburger-react";
+import ButtonBlue from "./partials/ButtonBlue";
 
 export default function Navbar({ onClick, navOpen }) {
   const pages = [
@@ -56,7 +57,13 @@ export default function Navbar({ onClick, navOpen }) {
         className="z-[1002] relative lg:hidden"
         onClick={onClick}
       >
-        <Hamburger duration={0.3} color="white" />
+        <Hamburger
+          duration={0.3}
+          color="white"
+          size={28}
+          label="Toggle mobile menu"
+          easing="ease-in-out"
+        />
       </button>
 
       <div
@@ -64,14 +71,14 @@ export default function Navbar({ onClick, navOpen }) {
           navOpen === true ? "opacity-100" : "opacity-0 pointer-events-none"
         }`}
       >
-        <nav className="w-full max-h-screen pt-24 pb-24 overflow-y-auto container no-scrollbar">
+        <nav className="w-full max-h-screen py-28 overflow-y-auto container no-scrollbar">
           <ul className="list-none flex flex-col lg:flex-row lg:items-center gap-10 lg:gap-[60px]">
             {pages.map((page, index) => {
               return (
                 <li key={index}>
                   <Link
                     href={page.route}
-                    className="text-[40px] md:text-[52px] font-bold text-center tracking-[-0.017em] leading-tight font-interTight text-white uppercase"
+                    className="text-[32px] font-semibold text-center tracking-[-0.017em] leading-tight font-interTight text-white"
                   >
                     {page.name}
                   </Link>
@@ -79,6 +86,11 @@ export default function Navbar({ onClick, navOpen }) {
               );
             })}
           </ul>
+
+          {/* Button */}
+          <div className="mt-12">
+            <ButtonBlue href="/contact" label="Contact" />
+          </div>
         </nav>
       </div>
     </div>

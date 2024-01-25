@@ -12,10 +12,10 @@ export default function HeadingWithCards({ badgeLabel, array, bgColor }) {
           {badgeLabel ? <BadgeLight label={badgeLabel} /> : null}
 
           {/* Heading + Subheading */}
-          <h2 className="balance-text text-[32px] md:text-[40px] leading-[1.25] tracking-[-0.017em] font-bold text-center font-interTight mb-4">
+          <h2 className="balance-text text-step-4 leading-[1.25] tracking-[-0.017em] font-bold text-center font-interTight mb-4">
             Crafting digital excellence
           </h2>
-          <p className="text-[18px] text-center leading-[1.5] tracking-[-0.017em] text-gray-text">
+          <p className="text-step-0 text-center leading-[1.5] tracking-[-0.017em] text-gray-text">
             AI reads and understands your designs, and with nothing more than a
             single line of feedback, perform complex actions autonomously.
           </p>

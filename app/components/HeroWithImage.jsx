@@ -8,7 +8,7 @@ export default function HeroWithImage({ heading, fancyHeading, subheading }) {
       </div>
       <div className="container relative mt-8 lg:mt-16">
         <div className="max-w-2xl mx-auto">
-          <h1 className="text-[40px] md:text-[52px] font-bold text-center tracking-[-0.017em] leading-tight font-interTight text-white">
+          <h1 className="text-step-5 font-bold text-center tracking-[-0.017em] leading-tight font-interTight text-white">
             {heading + " "}
             <span className="relative inline-flex justify-center items-end z-10">
               {fancyHeading + "."}
@@ -26,7 +26,7 @@ export default function HeroWithImage({ heading, fancyHeading, subheading }) {
             </span>
           </h1>
 
-          <p className="text-[18px] md:text-[20px] text-center leading-[1.5] tracking-[-0.017em] text-gray-400 mt-4">
+          <p className="text-step-1 text-center leading-[1.5] tracking-[-0.017em] text-gray-400 mt-6">
             {subheading}
           </p>
 
