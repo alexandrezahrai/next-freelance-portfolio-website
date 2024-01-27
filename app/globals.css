@@ -28,6 +28,10 @@ main {
   .font-interTight {
     font-family: var(--font-inter-tight);
   }
+
+  .font-mori {
+    font-family: var(--font-pp-mori);
+  }
   .special-border {
     background: linear-gradient(#fff, #fff) padding-box,
       linear-gradient(120deg, #ff006e, #8338ec, #fb5607) border-box;
