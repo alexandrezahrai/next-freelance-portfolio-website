@@ -1,30 +1,24 @@
-import ButtonBlack from "./partials/ButtonBlack";
+import ButtonBlue from "./partials/ButtonBlue";
 
 export default function CtaWithButton({ heading, copy, href, btnLabel }) {
   return (
-    <section className="bg-gradient-to-b from-white via-gray-light to-gray-medium py-20">
+    <section className="bg-transparent py-20 relative">
       <div className="container text-center">
-        {/* Image */}
-        <div className="w-20 h-20 p-2 bg-white shadow-lg rounded-xl inline-flex items-center justify-center relative mb-8">
-          <img
-            src="https://preview.cruip.com/gray/images/logo-02.png"
-            className="w-full h-full object-cover object-center"
-          />
-        </div>
-
         <div className="max-w-2xl mx-auto">
           {/* Heading + Subheading */}
-          <h2 className="balance-text text-step-4 leading-[1.25] tracking-[-0.017em] font-bold text-center font-interTight mb-4">
+          <h2 className="balance-text text-step-4 leading-[1.25] tracking-[-0.017em] font-semibold text-center font-mori text-transparent bg-clip-text bg-gradient-to-br from-[rgb(255,_255,_255)_30%] to-[rgba(255,_255,_255,_0.50)] mb-4">
             {heading}
           </h2>
-          <p className="text-step-0 text-center leading-[1.5] tracking-[-0.017em] text-gray-text">
+          <p className="text-step-0 text-center leading-[1.625] tracking-[-0.017em] text-gray-400">
             {copy}
           </p>
 
           {/* Button */}
-          <div className="md:grid place-content-center place-items-center mt-8">
-            <ButtonBlack href={href} label={btnLabel} />
-          </div>
+          {href ? (
+            <div className="md:grid place-content-center place-items-center mt-8">
+              <ButtonBlue href={href} label={btnLabel} />
+            </div>
+          ) : null}
         </div>
       </div>
     </section>

@@ -11,9 +11,9 @@ export default function Body({ children, className }) {
   }
   return (
     <body
-      className={`${className} ${navOpen ? "overflow-clip" : "overflow-auto"}`}
+      className={`${className} ${navOpen ? "overflow-clip" : "overflow-auto"} bg-[hsl(231,47%,3%)]`}
     >
-      <header className="bg-transparent text-white w-full absolute top-0 z-[1001] transition-all duration-500 ease-in-out">
+      <header className="bg-transparent text-gray-100 w-full absolute top-0 z-[1001] transition-all duration-500 ease-in-out">
         <Navbar onClick={handleNavOpen} navOpen={navOpen} />
       </header>
       {children}

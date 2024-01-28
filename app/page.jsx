@@ -1,3 +1,5 @@
+import Gradient from "@/public/media/svgs/Gradient";
+import Abstract from "@/public/media/svgs/Abstract";
 import HeadingWithCards from "./components/HeadingWithCards";
 import HeroWithImage from "./components/HeroWithImage";
 import Skills from "./components/Skills";
@@ -14,13 +16,26 @@ import { footerCtaContent } from "./content/footerCtaContent";
 export default function Home() {
   return (
     <main id="primary">
-      
+      <div className="absolute inset-0 blur-3xl">
+        <Abstract
+          fillColor="hsla(222, 92%, 29%, 0.8)"
+          className="w-full h-full object-cover object-center absolute inset-0"
+        />
+        {/* <Gradient
+          fillColor="hsla(222, 92%, 59%, 0.97)"
+          className="w-full h-full object-cover object-center absolute inset-0"
+        /> */}
+      </div>
+
       {/* Hero Section */}
       {heroContent ? (
         <HeroWithImage
           heading={heroContent.heading}
           fancyHeading={heroContent.fancyHeading}
+          headingCont={heroContent.headingCont}
           subheading={heroContent.copy}
+          buttonLink="/contact"
+          buttonLabel="Learn more"
         />
       ) : null}
 
@@ -28,7 +43,7 @@ export default function Home() {
       {services ? (
         <HeadingWithCards
           array={services}
-          bgColor="bg-gray-light"
+          bgColor="bg-transparent"
           badgeLabel="Services"
         />
       ) : null}
@@ -41,6 +56,7 @@ export default function Home() {
       {/* About Section */}
       {aboutContent ? (
         <HeadingWithCopy
+          bgColor="bg-transparent"
           badgeLabel="About"
           heading={aboutContent.heading}
           copy={aboutContent.copy}
@@ -55,11 +71,10 @@ export default function Home() {
         <CtaWithButton
           heading={footerCtaContent.heading}
           copy={footerCtaContent.copy}
-          href="/"
+          href="/contact"
           btnLabel="Contact"
         />
       ) : null}
-
     </main>
   );
 }

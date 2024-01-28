@@ -6,6 +6,7 @@ body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+  @apply text-step-0 leading-[1.625] tracking-[-0.017em];
 }
 
 main {
@@ -44,7 +45,7 @@ main {
 
   .special-border-dark {
     background: linear-gradient(#11182D, #11182D) padding-box,
-      linear-gradient(120deg, #70e000, #008000, #ccff33) border-box;
+      linear-gradient(120deg, #0341c8, #0B152E, #0051ff) border-box;
   }
 
   /* .special-border-dark {

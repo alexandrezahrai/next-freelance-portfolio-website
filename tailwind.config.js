@@ -31,7 +31,9 @@ module.exports = {
         "step-6": "clamp(2.9863rem, 2.6134rem + 1.8643vw, 4.2913rem)", // Step 6: 47.78px → 68.66px
       },
       colors: {
-        "off-black": "#18181B",
+        "blue-primary": "hsl(221,100%,50%)",
+        "blue-very-dark": "hsl(223, 49%, 8%)",
+        "off-black": "hsl(240,6%,10%)",
         "gray-light": "#FAFAFA",
         "gray-medium": "#F4F4F5",
         "gray-dark": "#27272A",
