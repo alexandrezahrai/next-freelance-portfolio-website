@@ -18,7 +18,7 @@ const PP_Mori = localFont({
       style: "normal",
     },
     {
-      path: "../public/fonts/PPMori-ExtraLightItalic.otf",
+      path: "../public/fonts/PPMori-ExtralightItalic.otf",
       weight: "300",
       style: "italic",
     },
