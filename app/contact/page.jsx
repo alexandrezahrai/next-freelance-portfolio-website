@@ -4,6 +4,7 @@ import Abstract from "@/public/media/svgs/Abstract";
 import BadgeDark from "../components/partials/BadgeDark";
 import LinkBlue from "../components/partials/LinkBlue";
 import LinkLight from "../components/partials/LinkLight";
+import Form from "../components/form/Form";
 
 export default function Page() {
   return (
@@ -21,8 +22,8 @@ export default function Page() {
         subheading={`Get in touch with me for tailored web development solutions to elevate your online presence.`}
       />
 
-      <section className="relative py-20 bg-transparent text-gray-100">
-        <div className="container">The contact form goes here...</div>
+      <section className="relative pb-20 bg-transparent text-gray-100">
+        <Form />
       </section>
     </main>
   );

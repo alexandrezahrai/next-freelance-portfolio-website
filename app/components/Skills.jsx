@@ -14,7 +14,7 @@ export default function Skills({ heading, copy }) {
     <section className="py-20 relative">
       <div className="absolute inset-0 blur-3xl">
         <Gradient
-          fillColor="hsla(222, 92%, 29%, 0.7)"
+          fillColor="hsla(290, 100%, 66%, 0.6)"
           className="w-full h-full object-cover object-center absolute inset-0"
         />
       </div>

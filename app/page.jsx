@@ -6,7 +6,7 @@ import Skills from "./components/Skills";
 import HeadingWithCopy from "./components/HeadingWithCopy";
 import Testimonials from "./components/Testimonials";
 import CtaWithButton from "./components/CtaWithButton";
-import { services } from "./content/Services";
+import { services } from "./content/services";
 import { heroContent } from "./content/heroContent";
 import { testimonials } from "./content/testimonials";
 import { aboutContent } from "./content/aboutContent";

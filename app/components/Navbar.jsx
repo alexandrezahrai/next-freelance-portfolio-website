@@ -21,7 +21,7 @@ export default function Navbar({ onClick, navOpen }) {
   ];
 
   return (
-    <div className="container left-0 right-0 flex items-center justify-between py-5 lg:py-9 absolute lg:relative">
+    <div className="container left-0 right-0 flex items-center justify-between py-5 absolute lg:relative">
       <Link
         href="/"
         aria-label="navigate to homepage"

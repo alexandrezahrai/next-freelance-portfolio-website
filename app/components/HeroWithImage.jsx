@@ -25,7 +25,7 @@ export default function HeroWithImage({
           className="w-full h-full object-cover object-center absolute inset-0"
         />
       </div> */}
-      <div className="container relative pb-20 pt-[calc(5rem_+_88px)] lg:pt-[calc(5rem_+_104px)]">
+      <div className="container relative pb-20 pt-[calc(5rem_+_88px)] lg:pt-[calc(5rem_+_72px)]">
         <div className="max-w-2xl mx-auto">
           {heading ? (
             <h1 className="text-step-5 font-semibold text-center tracking-[-0.017em] leading-tight font-mori text-transparent bg-clip-text bg-gradient-to-br from-[rgb(255,_255,_255)_30%] to-[hsla(221,100%,75%,1)]">

@@ -38,6 +38,7 @@ module.exports = {
         "gray-medium": "#F4F4F5",
         "gray-dark": "#27272A",
         "gray-text": "#71717A",
+        bubblegum: "hsl(290, 100%, 66%)",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

@@ -43,7 +43,7 @@ export default function HeadingWithCards({ badgeLabel, array, bgColor }) {
         {/* Button */}
         <div className="md:grid place-content-center place-items-center mt-10">
           <div className="flex flex-col md:flex-row gap-4">
-            <ButtonWhite href="/" label="Contact Me" />
+            <ButtonWhite href="/" label="Contact" />
             <ButtonBlack href="/" label="Request Demo" />
           </div>
         </div>

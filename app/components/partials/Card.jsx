@@ -1,4 +1,6 @@
 import { RiArrowRightUpLine } from "react-icons/ri";
+import { FiSearch, FiCode } from "react-icons/fi";
+import { PiPencilLineFill } from "react-icons/pi";
 
 export default function Card({
   heading,
@@ -13,6 +15,9 @@ export default function Card({
         enableMotion === true ? "hover:rotate-1" : ""
       } px-7 py-6 border border-white/10 rounded-3xl overflow-clip shadow transition-all duration-150 ease-in bg-[rgba(166,216,221,.02)] relative`}
     >
+      <div className="bg-[#FF3851] w-fit p-3 rounded-full mb-4">
+        <FiSearch size={24} className="text-gray-100" />
+      </div>
       <div className="flex mb-2 justify-between items-center w-full">
         <div className="text-step-0 font-semibold font-interTight text-gray-100">
           {heading}

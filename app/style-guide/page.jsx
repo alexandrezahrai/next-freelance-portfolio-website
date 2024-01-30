@@ -3,6 +3,7 @@ import HeroWithImage from "../components/HeroWithImage";
 import Abstract from "@/public/media/svgs/Abstract";
 import BadgeDark from "../components/partials/BadgeDark";
 import LinkBlue from "../components/partials/LinkBlue";
+import LinkPink from "../components/partials/LinkPink";
 import LinkLight from "../components/partials/LinkLight";
 
 export default function Page() {
@@ -49,6 +50,12 @@ export default function Page() {
                 hsla(0, 0%, 98%, 1)
               </p>
             </div>
+            <div className="flex flex-col justify-center items-center rounded-2xl overflow-clip min-h-[150px] bg-bubblegum text-blue-very-dark border border-white/10">
+              <p>Bubblegum</p>
+              <p className="text-[14px] leading-[1.625] text-gray-900">
+                hsla(290, 100%, 66%, 1)
+              </p>
+            </div>
           </div>
           <BadgeDark label="Heading-1" />
           <h1 className="text-step-5 font-semibold tracking-[-0.017em] leading-tight font-mori text-transparent bg-clip-text bg-gradient-to-br from-[rgb(255,_255,_255)_30%] to-[rgba(255,_255,_255,_0.50)] mb-12">
@@ -92,8 +99,9 @@ export default function Page() {
             consequat.
           </p>
           <BadgeDark label="Links" />
-          <div className="text-[14px] leading-[1.625] p-8 bg-gray-light text-off-black rounded-2xl mb-8">
+          <div className="text-[14px] leading-[1.625] p-8 bg-gray-light text-off-black rounded-2xl mb-8 flex gap-4">
             <LinkBlue href="/style-guide" label="Link blue" />
+            <LinkPink href="/style-guide" label="Link pink" />
           </div>
           <div className="text-[14px] leading-[1.625] p-8 mb-8">
             <LinkLight href="/style-guide" label="Link light" />

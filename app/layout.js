@@ -13,7 +13,7 @@ const PP_Mori = localFont({
   variable: "--font-pp-mori",
   src: [
     {
-      path: "../public/fonts/PPMori-ExtraLight.otf",
+      path: "../public/fonts/PPMori-Extralight.otf",
       weight: "300",
       style: "normal",
     },
